@@ -1,0 +1,528 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    scroll-behavior: smooth !important;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+
+.hidden-nav {
+    position: fixed;
+    top: -50%;
+    left: 0;
+    width: 100%;
+    transition: all .5s;
+    opacity: 0;
+    height: 8rem;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.2rem;
+
+}
+
+
+.top-header {
+    background-color: #ff1949;
+    height: 9rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.top-header .top-head-container {
+    padding-top: 2.54rem;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    transform: translateY(-20%);
+
+}
+
+.top-header .top-head-container>div {
+    margin: 0.8rem;
+}
+
+
+.exam {
+    position: absolute;
+    right: 0;
+
+}
+
+.exam button {
+    outline: none;
+    padding: 1.5rem 2rem;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    color: red;
+    transition: all .5s;
+    font-size: 1.4rem;
+    overflow: hidden;
+}
+
+#left-icon {
+    transition: all .19s;
+    transform: translateX(-10%)
+}
+
+#right-icon {
+    /* transform: translateX(220%) */
+    transition: all .19s;
+    visibility: hidden;
+}
+
+.exam button:hover {
+    background-color: black;
+    color: white;
+}
+
+.exam button:hover .e-t {
+    transition: all .5s;
+    transform: translateX(-30%);
+}
+
+.exam button:hover #left-icon {
+    transform: translateX(-150%);
+    visibility: hidden;
+}
+
+.exam button:hover #right-icon {
+    transform: translateX(-80%);
+    visibility: visible;
+}
+
+.top-section {
+    background: linear-gradient(90deg, #232021 0, #0093c8);
+    height: 65rem;
+    margin: 0 auto;
+}
+
+.main-nav {
+    width: 85%;
+    height: 8rem;
+    background-color: white;
+    margin: 0 auto;
+    transform: translateY(-12%);
+    padding: 0 1.5rem;
+    display: flex;
+    border-radius: .2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul>li {
+    margin: 0 .8rem;
+    cursor: pointer;
+}
+
+.nav-data {
+    height: 100%;
+}
+
+.top-nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-left: 15rem;
+}
+
+.responsive-nav {
+    display: none;
+}
+
+.top-nav>li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.top-nav>li:hover {
+    color: red
+}
+
+
+.drop-parent {
+    position: relative;
+    height: 100%;
+}
+
+
+.drop-parent:hover .drop-down {
+    opacity: 1;
+    top: 100%;
+}
+
+.drop-down {
+    position: absolute;
+    width: 15rem;
+    opacity: 0;
+    background-color: white;
+    top: 90%;
+    left: 0;
+    transition: all .5s;
+    font-size: 1.6rem;
+    color: black;
+}
+
+.drop-down li {
+    padding: .6rem 0;
+}
+
+.drop-down li:hover {
+    color: red;
+}
+
+.active {
+    color: red;
+}
+
+.section-data {
+    padding-top: 15rem;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+
+.section-data h1 {
+    font-size: 6rem;
+    width: 90%;
+    font-weight: bolder;
+}
+
+.section-data p {
+    padding: 1.5rem 0;
+    font-size: 1.6rem;
+    font-weight: lighter;
+}
+
+.section-form {
+    position: relative;
+    width: 90%;
+    height: 6rem;
+    margin-top: 1.2rem;
+}
+
+.section-form input {
+    width: 100%;
+    height: 100%;
+    border-radius: 4rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+    outline: none;
+}
+
+.section-form button {
+    position: absolute;
+    right: .5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 1.8rem 3rem;
+    border-radius: 4rem;
+    outline: none;
+    background-color: #dc3545;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.s-card {
+    width: 19.6rem;
+    height: 13.6rem;
+    background-color: white;
+    padding: 1.5rem;
+    margin: 0 .8rem;
+    border-radius: .5rem;
+    transition: all .5s;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.row-1 {
+    flex-wrap: wrap;
+}
+
+.s-card:hover {
+    scale: 1.1;
+}
+
+.course-area {
+    padding-bottom: 8rem;
+}
+
+.section-title {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 10rem;
+    justify-content: space-between;
+}
+
+.section-title p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: red;
+}
+
+.section-title h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.section-title button {
+    background-color: rgb(249, 21, 59);
+    padding: 1rem 3.5rem;
+    height: 5rem;
+    cursor: pointer;
+}
+
+.course-container {
+    margin: 0 auto;
+}
+
+.course-card {
+    width: 41.6rem;
+    height: 43.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all .4s;
+}
+
+.course-card:hover {
+    transform: translateY(-4%);
+}
+
+.course-img {
+    width: 41.6rem;
+    height: 31.2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.course-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.course-img button {
+    position: absolute;
+    right: 5rem;
+    bottom: 0;
+    padding: .8rem 2rem;
+    border-radius: .4rem;
+    transform: translateY(5%);
+}
+
+.course-info {
+    padding: 2rem 3rem;
+    font-size: 2.5rem;
+
+}
+
+.c-row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.partner {
+    width: 100%;
+    height: 48rem;
+    position: relative;
+    background-color: #ff1949;
+    padding-top: 9rem;
+    text-align: center;
+}
+
+.partner::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/line.svg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.p-card {
+    width: 35.6rem;
+    height: 20.6rem;
+    background-color: lightblue;
+    position: relative;
+    z-index: 1;
+}
+
+.partner h1 {
+    font-size: 5rem;
+    z-index: 1;
+    position: relative;
+
+}
+
+.partner .row {
+    margin: 0 auto;
+    padding-top: 6rem;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.p-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#hamburger,
+#close {
+    display: none;
+}
+
+#move-top-btn {
+    position: fixed;
+    width: 4.2rem;
+    height: 4.2rem;
+    background-color: #ff1949;
+    right: 2rem;
+    bottom: 0;
+    border-radius: .5rem .5rem 0 0;
+    text-align: center;
+    color: white;
+    padding-top: .5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.swiper {
+    width: 85%;
+    height: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #be0d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18rem;
+    height: 11rem;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-area {
+    padding-top: 10rem;
+}
+
+.top-footer {
+    width: 100%;
+    padding: 10rem 0;
+    background-color: #12141b;
+}
+
+.bottom-footer {
+    width: 100%;
+    background-color: #090a0e;
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+    padding: 4rem 0;
+}
+
+.f-row {
+    margin: 0 auto;
+    color: white;
+    justify-content: space-between;
+    font-size: 1.7rem;
+}
+
+.f-row h3 {
+    font-size: 2rem;
+}
+
+.f-row ul li a {
+    color: white;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.contact-us a:hover {
+    color: red;
+    transition: all .5s linear;
+}
+
+.f-row p {
+    margin-top: 2rem;
+}
+
+.support a {
+    transition: all .5s;
+}
+
+.f-courses a {
+    transition: all .5s;
+}
+
+.support a:hover {
+    color: red;
+    transform: translateX(15%);
+
+}
+
+.f-courses a:hover {
+    color: red;
+    transform: translateX(15%);
+}
+
+.enroll {
+    background-color: white;
+    outline: none;
+    transition: all .4s;
+    font-weight: 600;
+}
+
+.course-card:hover .enroll {
+    background-color: lightgreen;
+    color: white;
+}

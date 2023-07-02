@@ -1,0 +1,73 @@
+/* Utility Classes */
+.icon {
+    position: relative;
+    transform: translateY(10%);
+    margin-right: .5rem;
+}
+
+.text {
+    font-size: 1.5rem;
+}
+
+.white {
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.paddingX {
+    padding-left: 3.7rem;
+    padding-right: 3.7rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.text-sm {
+    font-size: 1.1rem;
+}
+
+.text-md {
+    font-size: 1.5rem;
+}
+
+.text-lg {
+    font-size: 1.8rem;
+}
+
+.text-xl {
+    font-size: 2rem;
+}
+
+.text-2xl {
+    font-size: 4rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.mx {
+    margin-left: .7rem;
+    margin-right: .7rem;
+}
+
+.width-85 {
+    width: 85%;
+}
+
+.reset-btn {
+    outline: none;
+    border: none;
+}
+
+.bg-gray{
+    background-color: #f7f5f4;
+}

@@ -1,0 +1,262 @@
+@media screen and (max-width: 480px) {
+    .hidden-nav {
+        display: none;
+    }
+
+    .top-header {
+        padding: 0;
+    }
+
+    ul>li {
+        margin: 0;
+    }
+
+    .data {
+        font-size: 1.4rem;
+        font-weight: bolder;
+    }
+
+    .top-head-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .top-head-container>div {
+        align-items: center;
+    }
+
+    .top-head-container .data p:nth-child(1) {
+        display: none;
+    }
+
+    .email {
+        display: none;
+    }
+
+    .exam {
+        display: none;
+    }
+
+    .main-nav {
+        width: 100%;
+        display: block;
+        /* position: relative; */
+    }
+
+    .nav-data {
+        display: none;
+    }
+
+    .responsive-nav {
+        padding: 0 1rem;
+        display: none;
+        width: 100%;
+        height: 20rem;
+        background-color: white;
+        font-size: 2rem;
+        color: black;
+        overflow-y: auto;
+        transform: translateY(-6%);
+    }
+
+    .responsive-nav ul>li {
+        padding: 1rem 0;
+
+    }
+
+    .responsive-nav ul>li>ul {
+        padding-left: 1rem;
+        padding-top: 1;
+        height: 0;
+        opacity: 0;
+        position: relative;
+        z-index: -1;
+        width: 100%;
+    }
+
+    #hamburger {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        display: block;
+        transform: translateY(-50%);
+        cursor: pointer;
+        margin-right: 1rem;
+    }
+
+    #close {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        margin-right: 1rem;
+    }
+
+    .open-extra {
+        width: 100%;
+        position: relative;
+    }
+
+    .open-extra span {
+        position: absolute;
+        right: 10px;
+        top: 0;
+    }
+
+    .top-nav {
+        display: block;
+        width: 100%;
+    }
+
+    .top-section {
+        height: auto;
+        padding-bottom: 12rem;
+    }
+
+    .section-form {
+        margin: 1.2rem auto;
+    }
+
+    .section-data {
+        padding-top: 7rem;
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-data .data {
+        width: 100%;
+        padding: 0 .5rem;
+    }
+
+    .section-data h1 {
+        font-size: 3rem;
+        width: 100%;
+    }
+
+    .section-data p {
+        padding-top: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+
+    .course-card-data>div {
+        flex-wrap: wrap;
+    }
+
+    .s-card {
+        width: 16.6rem;
+        height: 12.6rem;
+    }
+
+    .row-1 {
+        justify-content: center;
+        align-items: center;
+        padding-top: 1.9rem;
+    }
+
+    .section-title {
+        width: 100%;
+        padding-top: 4rem;
+        text-align: center;
+    }
+
+    .section-title div {
+        width: 100%;
+    }
+
+    .section-title p {
+        font-size: 1.5rem;
+    }
+
+    .section-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .section-title button {
+        display: none;
+    }
+
+    .course-card {
+        width: 35.6rem;
+        height: 34.5rem;
+        margin-top: 2rem;
+    }
+
+    .course-img {
+        width: 100%;
+        height: 25rem;
+        object-fit: cover;
+    }
+
+    .course-info {
+        font-size: 2rem;
+    }
+
+    .course-img button {
+        right: 2rem;
+    }
+
+    .partner {
+        height: auto;
+        padding-bottom: 5rem;
+    }
+
+    .partner .title {
+        font-size: 3rem;
+    }
+
+    .partner .row {
+        padding-top: 3rem;
+        flex-wrap: wrap;
+    }
+
+    .p-card {
+        margin-top: 1.9rem;
+    }
+
+    .footer-area {
+        margin-top: 8rem;
+        padding: 0;
+    }
+
+    .top-footer {
+        padding: 1rem 2rem;
+    }
+
+    .f-row {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .f-row div {
+        width: 100%;
+    }
+
+    .f-row>div {
+        margin-top: 4rem;
+    }
+
+    .f-row>div>h3 {
+        padding-bottom: 1rem;
+    }
+
+    .f-row ul li a {
+        margin-top: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .f-row p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .contact-us a {
+        width: 92%;
+    }
+}
